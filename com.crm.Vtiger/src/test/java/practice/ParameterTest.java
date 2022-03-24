@@ -13,7 +13,13 @@ public class ParameterTest {
 		System.out.println(System.getProperty("username"));
 		System.out.println(System.getProperty("password"));
 		
+		System.out.println("branch test");
+		
+		System.out.println("changees to check from my origin");
+		
+		
 
+		
 	}
 
 }
