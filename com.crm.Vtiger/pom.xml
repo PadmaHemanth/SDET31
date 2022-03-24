@@ -46,7 +46,7 @@
     <groupId>org.testng</groupId>
     <artifactId>testng</artifactId>
     <version>7.4.0</version>
-    <scope>test</scope>
+    <scope>compile</scope>
 </dependency>
 
 </dependencies>
@@ -85,6 +85,26 @@
           <configuration>
           <suiteXmlFiles>
           <suiteXmlFile>batchexecutiontestng.xml
+          </suiteXmlFile>
+      	</suiteXmlFiles>
+        </configuration>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+  </build>
+</profile>
+<profile>
+<id>smokepadma</id>
+<build>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-surefire-plugin</artifactId>
+          <version>3.0.0-M5</version>
+          <configuration>
+          <suiteXmlFiles>
+          <suiteXmlFile>smokepadmatestng.xml
           </suiteXmlFile>
       	</suiteXmlFiles>
         </configuration>
